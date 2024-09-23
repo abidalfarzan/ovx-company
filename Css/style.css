@@ -857,6 +857,7 @@ footer {
     color: #ffffff;
     background: #191925;
     text-align: center;
+    font-size: 2rem;
 }
 
 @media (max-width: 768px) {
