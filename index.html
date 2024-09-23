@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digtal Agency</title>
+    
+    <link rel="stylesheet" href="Css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#about" class="act">About</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">OvX</a></li>
+                <li class="hideOnMobile"><a href="#about" class="act">About</a></li>
+                <li class="hideOnMobile"><a href="#testimonial">Testimonial</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li onclick=showSidebar() class="menu_icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>   
+        </nav>
+
+        <script>
+            
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+
+        </script>
+
+    </header>
+
+    <div class="header_content">
+
+        <div class="container">
+
+            <div class="header_container">
+                
+                <h1 class="header_main_title">We Transform into Digital Reality</h1>
+                <p class="header_p">OvX is a cutting-edge digital solutions company specializing in innovative technology services and digital transformation strategies.</p>
+                <a href="#" class="header_btn">Learn More &rarr;</a>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <section class="about" id="about">
+
+        <div class="about_container">
+            
+            <img src="Images/about.jpg" alt="" class="about_img">
+                
+            <div class="about_content">
+                <h4 class="about_title_primary">About The Company</h4>
+                <h2 class="about_title_secondary">Digtal Design and Brand</h2>
+                <p class="about_p">OvX aims to accelerate digital transformation by providing innovative, user-centric solutions that streamline business processes and drive growth.</p>
+                <p class="about_p">To be a global leader in digital transformation, helping businesses harness the full potential of emerging technologies.</p>
+                <a href="#" class="about_btn">WATCH VIDEO</a>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <section id="testimonial" class="testimonial">
+
+        <div class="slider_title">
+            <h2 class="test_title_primary">Meet Our Member</h2>
+            <p class="test_p">Meet Our Best Member of this Company!</p>
+        </div>
+
+        <div class="slider">
+
+            <div class="wrapper">
+                <i id="left" class="fas fa-arrow-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="Images/Slider/user1.png" alt="img" draggable="false"></div>
+                        <h2>David Peter</h2>
+                        <span>CEO</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Slider/user2.jpg" alt="img" draggable="false"></div>
+                        <h2>Miaw Sina</h2>
+                        <span>Designer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Slider/user3.jpeg" alt="img" draggable="false"></div>
+                        <h2>Peter Griffin</h2>
+                        <span>NPC</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Slider/user5.jpeg" alt="img" draggable="false"></div>
+                        <h2>Johan Libert</h2>
+                        <span>Freelancer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Slider/user4.jpeg" alt="img" draggable="false"></div>
+                        <h2>Snoop Dawg</h2>
+                        <span>Online Coach</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="Images/Slider/user6.jpeg" alt="img" draggable="false"></div>
+                        <h2>Gus Amiguz</h2>
+                        <span>Mobile Developer</span>
+                    </li>
+                </ul>
+                <i id="right" class="fas fa-arrow-right"></i>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="contact-container">
+
+            <h2 class="contact_title_primary">Contact Me</h2>
+
+            <p class="contact_p">I'd love to hear from you. Please fill out the form below to get in touch.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p class="p_f">Copyright &copy; 2024 by Abidal Farzan | All Rights Reserved.</p>
+    </footer>
+
+    
+    </body>
+
+    <script src="JavaScript/script.js" defer></script> <!-- The defer attribute delays the execution of the script until the page has finished parsing. -->
+
+</html>
